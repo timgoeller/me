@@ -1,0 +1,196 @@
+:root {
+    --primary-color: #B55EE8;
+    --secondary-color: #75E6A4;
+    --background: #fdfbfe;
+    --text-color-black: #212427;
+}
+
+@font-face {
+    font-family: "Geomanist";
+    src: url("assets/fonts/geomanist/Geomanist-Regular.otf");
+}
+@font-face {
+    font-family: "Geomanist";
+    src: url("assets/fonts/geomanist/Geomanist-Regular-Italic.otf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Geomanist";
+    src: url("assets/fonts/geomanist/Geomanist-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Geomanist";
+    src: url("assets/fonts/geomanist/Geomanist-Bold-Italic.otf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+body, html {
+    margin: 0;
+    font-family: "Geomanist";
+    overflow-x: hidden;
+    color: var(--text-color-black);
+    background-color: var(--background);
+}
+
+.primary {
+    fill: var(--primary-color);
+}
+
+.secondary {
+    fill: var(--secondary-color);
+}
+
+#main-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* HEAD */
+
+#head-box {
+    transform: translateX(-53%);
+    margin-left: 53%;
+}
+
+#head-box #text-name {
+    fill: white;
+    font-size:3em;
+    font-weight:bold;
+    transform: rotate(6deg);
+    transform-origin: center;
+}
+
+#head-box #text-last-name {
+    fill: var(--text-color-black);
+    font-size:3em;
+    font-weight:bold;
+    transform: rotate(6deg);
+    transform-origin: center;
+}
+
+/* CLAIM */
+
+#claim-section {
+    margin: 0px 40px 0 40px;
+    margin-top: 30px;
+    font-size: 1.3em;
+    text-align: center;
+    font-style: italic;
+    width: 80%;
+}
+
+/* WELCOME */
+
+#welcome-section {
+    display: flex;
+    margin-top: 50px;
+}
+
+@media (max-width: 400px) {
+    #welcome-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+  
+
+#me-image {
+    position: relative;
+    height: 110px;
+}
+
+#me-image #background-primary {
+    position: absolute;
+    background-color: var(--primary-color);
+    transform: rotate(9deg);
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    top: 0;
+}
+
+#me-image #background-secondary {
+    position: absolute;
+    background-color: var(--secondary-color);
+    transform: rotate(-5deg);
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    top: 0;
+}
+
+#me-image #image {
+    height: 100px;
+
+}
+
+#welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+#welcome-text #greeting {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#cv-1 {
+    /*margin: 0px 40px 0 40px;*/
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.cv-element {
+    width: 80%;
+}
+
+.cv-element .title {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.cv-element .description {
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+
+.cv-element .title .name {
+    font-size: 2em;
+}
+
+.between-image img {
+    width: 550px;
+}
+
+@media (max-width: 700px) {
+    .between-image img {
+        width: 300px;
+    }
+}
