@@ -188,6 +188,7 @@ body, html {
 
 .cv-element .title .name {
     font-size: 2em;
+    margin-top: 5px;
 }
 
 .between-image img {
