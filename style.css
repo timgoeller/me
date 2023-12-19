@@ -105,7 +105,6 @@ body, html {
         align-items: center;
     }
 }
-  
 
 #me-image {
     position: relative;
@@ -142,6 +141,12 @@ body, html {
     justify-content: center;
     align-items: center;
     margin-left: 40px;
+}
+
+@media (max-width: 400px) {
+    #welcome-text {
+        margin-left: 0;
+    }
 }
 
 #welcome-text #greeting {
