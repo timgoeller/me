@@ -118,7 +118,6 @@ body, html {
     transform: rotate(9deg);
     width: 100px;
     height: 100px;
-    z-index: -1;
     top: 0;
 }
 
@@ -128,13 +127,13 @@ body, html {
     transform: rotate(-5deg);
     width: 100px;
     height: 100px;
-    z-index: -1;
     top: 0;
 }
 
 #me-image #image {
     height: 100px;
-
+    position: relative;
+    z-index: 1;
 }
 
 #welcome-text {
