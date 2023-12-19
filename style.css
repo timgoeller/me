@@ -152,6 +152,7 @@ body, html {
 #welcome-text #greeting {
     font-weight: bold;
     font-size: 2em;
+    margin-bottom: 5px;
 }
 
 #cv-1 {
